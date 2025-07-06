@@ -25,6 +25,20 @@ header {
   width: 120px;
 }
 
+.logo {
+  height: 50px;         /* Increase the logo height */
+  width: auto;          /* Keep the aspect ratio */
+  vertical-align: middle; /* Align with nav links */
+}
+
+/* Make sure the logo and nav are in a row and centered vertically */
+.nav-container {
+  display: flex;           /* Place logo and nav side by side */
+  align-items: center;     /* Vertically center them */
+  justify-content: space-between; /* Space out logo and nav */
+  padding: 10px 0;         /* Add some space above and below */
+}
+
 nav a {
   margin-left: 20px;
   color: #10609d;
@@ -41,15 +55,23 @@ nav a {
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #fff9c7;
-  padding: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-image: url('img/hero.png'); /* Use your hero image as background */
+  background-size: cover;              /* Show the whole image */
+  background-repeat: no-repeat;          /* Don't repeat the image */
+  background-position: center;           /* Center the image */
+  min-height: 500px;                     /* Make the section taller */
+  padding: 0.5rem 2rem 2rem 7rem;
+  position: relative;
 }
+
 
 .hero-text {
   flex: 1;
   padding: 1rem;
+  text-align: left;   /* Align text to the left */
+  max-width: 300px;   /* Optional: limit width for better readability */
 }
 
 .hero-text h1 {
@@ -95,6 +117,24 @@ nav a {
 
 .card img {
   width: 50px;
+}
+.card img[alt="Water Drop Icon"] {
+  background: #fff6ea;    /* Match the info section background */
+  border-radius: 50%;     /* Make the background a circle */
+  padding: 8px;           /* Add space around the icon */
+  box-sizing: content-box;/* Make sure padding doesn't shrink the image */
+}
+.card img[alt="Mobile Icon"] {
+  background: #fff6ea;    /* Match the info section background */
+  border-radius: 50%;     /* Make the background a circle */
+  padding: 8px;           /* Add space around the icon */
+  box-sizing: content-box;/* Make sure padding doesn't shrink the image */
+}
+.card img[alt="Graph Icon"] {
+  background: #fff6ea;    /* Match the info section background */
+  border-radius: 50%;     /* Make the background a circle */
+  padding: 8px;           /* Add space around the icon */
+  box-sizing: content-box;/* Make sure padding doesn't shrink the image */
 }
 
 .testimonial {
